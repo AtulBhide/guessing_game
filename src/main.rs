@@ -13,8 +13,4 @@ fn main() {
         .expect("Failed to read line");
 
     println!("You guessed: {guess}");
-
-    let str_len = guess.len();
-
-    println!("Input size: {str_len}"); // expect +2 to the expected length as EOL ("\r\n" on windows and "\n" on Linux/Unix) are part of the input string (see definition of the read_line functionX)
 }
